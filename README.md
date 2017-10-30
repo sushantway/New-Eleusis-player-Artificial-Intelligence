@@ -2,17 +2,6 @@
 
 Project Phase 2
 
-CMSC 671
-
------------------------------------------------
-## Contributors
-
-- Harsh Vashishta
-- Sabin Raj Tiwari
-- Shantanu Sengupta
-- Sushant Chaudhari
-
------------------------------------------------
 ## Running the program:
 
 python scientist.py \<initial cards\> '\<rule\>'
@@ -26,7 +15,7 @@ If you are running the program on bash, a raw_input() may show up before everyth
 -----------------------------------------------
 ## Changes made to game.py
 
-We have made a few changes to the game.py file provided by the TAs and combined them to our scientist.py module. We made it so that the adversaries wait until at least 20 cards have been played in order to decide game end. We also made it so that the adversary would pick a new card after playing one.
+Few changes made to the game.py file provided by the TAs and combined them to our scientist.py module. We made it so that the adversaries wait until at least 20 cards have been played in order to decide game end. We also made it so that the adversary would pick a new card after playing one.
 
 -----------------------------------------------
 ## Changes made to new_eleusis.py
@@ -45,4 +34,3 @@ We have made a few changes to the game.py file provided by the TAs and combined 
 For Phase-2 of Eleusis, we are using Decomposition Algorithm to create rules by reading all the correct cards in the BoardState. Basically, Decomposition Algorithm creates rules in the IF-THEN format. This works by using a Dictionary where all the keys are list of all the attributes of the previous card and the values are all the attributes of the next CORRECT card. Then each of the attributes of the next card are generalized to avoid overfitting of the data. After generalization, we convert these mappings from their dictionary format to string format. Using the OR and AND on all such mappings, we create a list of rules and sort them on the basis of their efficiency, logical equivalence and rule-length. Efficiency is measured on all the CORRECT Cards. Logical Equivalence is measured on all the CORRECT and INCORRECT Cards. When the player is required to display his rule, he chooses the rule that is highest on efficiency, equivalence and lowest on rule length.
 =======
 For Phase-2 of Eleusis, we are using Decomposition Algorithm to create rules by reading all the correct cards in the BoardState. Basically, Decomposition Algorithm creates rules in the IF-THEN format. This works by using a Dictionary where all the keys are list of all the attributes of the previous card and the values are all the attributes of the next CORRECT card. Then each of the attributes of the next card are generalized to avoid overfitting of the data. After generalization, we convert these mappings from their dictionary format to string format. Using the OR and AND on all such mappings, we create a list of rules and sort them on the basis of their efficiency, logical equivalence and rule-length. Efficiency is measured on all the CORRECT Cards. Logical Equivalence is measured on all the CORRECT and INCORRECT Cards. When the player is required to display his rule, he chooses the rule that is highest on efficiency, equivalence and lowest on rule length.
->>>>>>> d353fef828c1028ee4dd488f9f92e32d00888744
